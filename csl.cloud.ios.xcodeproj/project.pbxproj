@@ -17,6 +17,7 @@
 		B39C21F32A21990800A16530 /* csl_cloud_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B39C21F22A21990800A16530 /* csl_cloud_iosTests.m */; };
 		B39C21FD2A21990900A16530 /* csl_cloud_iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B39C21FC2A21990900A16530 /* csl_cloud_iosUITests.m */; };
 		B39C21FF2A21990900A16530 /* csl_cloud_iosUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B39C21FE2A21990900A16530 /* csl_cloud_iosUITestsLaunchTests.m */; };
+		B39C220E2A21A99400A16530 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39C220D2A21A99400A16530 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		B39C21F82A21990900A16530 /* csl.cloud.iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = csl.cloud.iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39C21FC2A21990900A16530 /* csl_cloud_iosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = csl_cloud_iosUITests.m; sourceTree = "<group>"; };
 		B39C21FE2A21990900A16530 /* csl_cloud_iosUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = csl_cloud_iosUITestsLaunchTests.m; sourceTree = "<group>"; };
+		B39C220C2A21A87200A16530 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		B39C220D2A21A99400A16530 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B34BDDBA2A26349600D3097B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		B39C21CA2A21990700A16530 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		B39C21D52A21990700A16530 /* csl.cloud.ios */ = {
 			isa = PBXGroup;
 			children = (
+				B39C220B2A21A7FF00A16530 /* Controller */,
 				B39C21D62A21990700A16530 /* AppDelegate.h */,
 				B39C21D72A21990700A16530 /* AppDelegate.m */,
 				B39C21D92A21990700A16530 /* SceneDelegate.h */,
@@ -134,6 +145,16 @@
 				B39C21FE2A21990900A16530 /* csl_cloud_iosUITestsLaunchTests.m */,
 			);
 			path = csl.cloud.iosUITests;
+			sourceTree = "<group>";
+		};
+		B39C220B2A21A7FF00A16530 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B34BDDBA2A26349600D3097B /* Login */,
+				B39C220C2A21A87200A16530 /* BaseViewController.h */,
+				B39C220D2A21A99400A16530 /* BaseViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B39C21DE2A21990700A16530 /* ViewController.m in Sources */,
+				B39C220E2A21A99400A16530 /* BaseViewController.m in Sources */,
 				B39C21D82A21990700A16530 /* AppDelegate.m in Sources */,
 				B39C21E92A21990800A16530 /* main.m in Sources */,
 				B39C21DB2A21990700A16530 /* SceneDelegate.m in Sources */,
@@ -449,6 +471,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +498,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
